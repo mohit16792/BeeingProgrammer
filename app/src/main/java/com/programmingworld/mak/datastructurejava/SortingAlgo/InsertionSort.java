@@ -1,26 +1,12 @@
-package com.programmingworld.mak.datastructurejava.Array;
+package com.programmingworld.mak.datastructurejava.SortingAlgo;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Sort {
+public class InsertionSort {
     public static void main(String[] args) {
-         int[] arr={6,5,3,1,8,7,2,4};
-//         for(int i=0;i<arr.length-1;i++)
-//         {
-//
-//              for(int j=i;j>=0;j--){
-//                   if(arr[j+1]<arr[j]){
-//                       int temp=arr[j+1];
-//                       arr[j+1]=arr[j];
-//                       arr[j]=temp;
-//
-//                   }
-//              }
-//
-//         }
-
+         int[] arr={12, 11, 13, 5, 6};
         for(int i=0;i<arr.length-1;i++){
 
             for(int j=i;j>=0;j--){
@@ -28,12 +14,13 @@ public class Sort {
                      int temp=arr[j];
                      arr[j]=arr[j+1];
                      arr[j+1]=temp;
+                     System.out.println(i);
                  }else{
                      break;
                  }
             }
         }
-       
+
 
 
 
